@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      num1 = +prompt("Nhap vao tham so thu nhat:");
+      num2 = +prompt("Nhap vao tham so thu hai:");
+      sum = check_num(num1, num2);
+      if (sum) alert(`Tong cua hai tham so: ${sum}`);
+
+      function check_num(a, b) {
+        if (a > b) {
+          alert(`Tham so thu nhat lon hon tham so thu hai`);
+        } else {
+          return a + b;
+        }
+      }
+    </script>
+  </body>
+</html>
